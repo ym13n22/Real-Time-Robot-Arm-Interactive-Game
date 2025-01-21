@@ -1,0 +1,27 @@
+import socket
+
+# 创建一个服务器套接字
+server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+server_host = '127.0.0.1'
+server_port = 12345
+
+server_socket.bind((server_host, server_port))
+server_socket.listen(1)  # 等待连接的最大数量
+
+print(f"等待Unity连接到 {server_host}:{server_port}")
+
+# 等待一个连接
+client_socket, client_address = server_socket.accept()
+print(f"Unity已连接: {client_address}")
+
+# 接收来自Unity的数据
+while True:
+    data = client_socket.recv(1024)
+    if not data:
+        break
+    print(f"收到来自Unity的数据: {data.decode()}")
+
+# 关闭连接
+client_socket.close()
+server_socket.close()
+
