@@ -1,9 +1,11 @@
 This project simulates real-time human arm movements using IMU (Inertial Measurement Unit) and EMG (Electromyography) data to control a digital robotic arm in Unity. Designed as a gesture-driven interactive game, the system maps user arm motions to digital counterparts for a responsive gaming experience.
 
 🎯 Objective
+
 Build an interactive game where a digital robot arm simulates a player's real arm movements in real time, powered by data from IMU and EMG sensors mounted on a wearable sleeve.
 
 🧩 System Components
+
 IMU Sensor (e.g., MPU6050 or similar): Captures orientation data (quaternions & acceleration)
 
 EMG Sensor: Reads muscle activation using 6 electrodes across 2 muscles
@@ -15,6 +17,7 @@ Unity Game: Visualizes the robot arm and provides interactive gameplay
 Blender Model: 3D robotic arm model for realistic joint movement
 
 💻 Software Requirements
+
 1. Python (≥ 3.12)
 Install from: https://www.python.org/
 
@@ -28,6 +31,7 @@ Use Unity Hub to manage versions and import the project.
 Download from: https://www.blender.org/download/
 
 🧤 Wearable Sleeve Setup
+
 IMU Sensor
 Attach to the front-center of the wrist.
 
@@ -39,6 +43,7 @@ EMG Sensor
 Used for gesture classification (e.g., hand open / close).
 
 🎮 Game Instructions
+
 Launch the Python program (Window2.py)
 
 Click Start → enters training phase.
