@@ -19,10 +19,6 @@ Blender Model: 3D robotic arm model for realistic joint movement
 Install from: https://www.python.org/
 
 Install required packages:
-
-bash
-Copy
-Edit
 pip install matplotlib numpy pyserial pillow
 2. Unity Engine
 Download from: https://unity.com/download
